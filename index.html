@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina:
+autor: Franco Sejas Vásquez
+fecha: Diciembre 2020
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mucho Arte</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="grid">
+
+            <div class="textos-hero">
+                <h1 class="weight-600">
+                    MUCHO ARTE
+                </h1>
+                <p class="parrafo">¿Te gusta la fotografía?</p>
+                <a href="" class="cta">Contactame</a>
+            </div>
+            <div class="img-hero">
+                <img src="im4.jpg" alt="" class="img">
+            </div>
+        </div>
+    </header>
+    <div class="barra">
+        <nav class="BarraNavegacion">
+            <ul>
+                <li class="menuDesplegable">
+                    <a>
+                    Inicio
+                </a>
+                </li>
+                <li><a href="html/Actualidad.html" target="_self">Actualidad</a></li>
+                <li class="menuDesplegable">
+                    <a>
+                    Fotografía
+                </a>
+                    <div class="menuDesplegable-contenido">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="menuDesplegable">
+                    <a>
+                    Dibujo
+                </a>
+                    <div class="menuDesplegable-contenido">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="menuDesplegable">
+                    <a>
+                    Poesía
+                </a>
+                    <div class="menuDesplegable-contenido">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="menuDesplegable">
+                    <a>
+                    Música
+                </a>
+                    <div class="menuDesplegable-contenido">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="menuDesplegable">
+                    <a>
+                    Cine
+                </a>
+                    <div class="menuDesplegable-contenido">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="menuDesplegable">
+                    <a>
+                    Consejos
+                </a>
+                    <div class="menuDesplegable-contenido">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="menuDesplegable">
+                    <a>
+                    Tatuajes
+                </a>
+                    <div class="menuDesplegable-contenido">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="services">
+            <div class="grid">
+                <div class="items">
+                    <div class="item">
+                        <i class="fas fa-camera"></i>
+                        <h3 class="titulo-services">Mi galería</h3>
+                        <p>Pincha aquí para dar un vistazo</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-user"></i>
+                        <form name="miFormulario" onSubmit="return guardaUsr()">
+                            <label for="usuario">Ingrese su nombre o usuario:</label><br>
+                            <input id="input" type="text" name="usuario" maxlength="25" required><br>
+                            <input id="input" type="submit" value="Iniciar sesión">
+                        </form>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-camera"></i>
+                        <h3 class="titulo-services">Te va a flipar</h3>
+                        <p>Material de artistas que me gustan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="grid">
+                <div class="textos-about-us">
+                    <h2 class="subtitulo">SOBRE NOSOTROS</h2>
+                    <p class="parrafo">Somos una página dedicada a la divulgación del arte, pero sobre todo de fotografía, que es nuestro principal interes.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mission grid">
+            <div class="img-mission">
+                <img src="img2.jpg" alt="" class="img">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="grid">
+            <div class="textos-footer">
+                <h2 class="subtitulo">Contactame</h2>
+            </div>
+            <div class="footer-item1">
+                <a href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="footer-item2">
+                <a href="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footer-item3">
+                <a href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-item4">
+                <a href="">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/e19c2d3f8b.js" crossorigin="anonymous"></script>
+</body>
+<script src="index.js"></script>
+
+</html>
