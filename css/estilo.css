@@ -49,6 +49,10 @@ body {
     height: 500px;
 }
 
+.headerGaleria {
+    height: 200px;
+}
+
 .barra {
     background-color: #000;
     align-items: center;
