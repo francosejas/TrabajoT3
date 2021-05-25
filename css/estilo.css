@@ -16,6 +16,9 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.cabezaGalería{
+    align-items:center;
+
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
