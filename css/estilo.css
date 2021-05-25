@@ -41,6 +41,19 @@ width: 90%;
 padding: 5px 10px 5px 26px;
 }
 
+.container > div {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(207,232,220);
+  border: 2px solid rgb(79,185,227);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+}
+
 .cabezaGaleria{
     text-align: center;
     color: white;
