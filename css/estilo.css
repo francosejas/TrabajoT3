@@ -339,6 +339,13 @@ nav li:hover {
     text-align: center;
 }
 
+.textoActualidad{
+   font-size:3em;
+}
+
+.contenidoActualidad{
+    height:100%;
+}
 
 @media screen and(max-width:800px) {
     .header {
