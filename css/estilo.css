@@ -325,7 +325,7 @@ nav li:hover {
 
 .galeria{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px,1fr));
     width:95%;
     margin:auto;
     grid-gap: 10px;
@@ -337,7 +337,7 @@ nav li:hover {
 .galeria img{
     width:100%;
     vertical-align:top;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
     transition: transform 0.5s;
 }
