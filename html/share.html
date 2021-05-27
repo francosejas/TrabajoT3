@@ -18,30 +18,21 @@ fecha: Diciembre 2020
 </head>
 
 <body>
-    <header class="header">
-        <div class="grid">
-
-            <div class="textos-hero">
+    <header>
+            <div class="cabezaGaleria">
                 <h1 class="weight-600">
-                    MUCHO ARTE
+                    ¿Os gusta?
                 </h1>
-                <p class="parrafo">¿Te gusta la fotografía?</p>
-                <a href="" class="cta">Contactame</a>
             </div>
-            <div class="img-hero">
-                <img src="./img/im4.jpg" alt="" class="img">
-            </div>
-        </div>
-    </header>
-    <div class="barra">
+                <div class="barra">
         <nav class="BarraNavegacion">
             <ul>
                 <li class="menuDesplegable">
-                    <a>
+                    <a href="../index.html">
                     Inicio
                 </a>
                 </li>
-                <li><a href="html/Actualidad.html" target="_self">Actualidad</a></li>
+                <li><a href="actualidad.html" target="_self">Actualidad</a></li>
                 <li class="menuDesplegable">
                     <a>
                     Fotografía
@@ -115,45 +106,66 @@ fecha: Diciembre 2020
             </ul>
         </nav>
     </div>
-    <main>
-        <section class="services">
-            <div class="grid">
-                <div class="items">
-                    <div class="item">
-                        <i class="fas fa-camera"></i>
-                        <h3 class="titulo-services">Mi galería</h3>
-                        <p>Pincha aquí para dar un vistazo</p>
-                    </div>
-                    <div class="item">
-                        <i class="fas fa-user"></i>
-                        <form name="miFormulario" onSubmit="return guardaUsr()">
-                            <label for="usuario">Ingrese su nombre o usuario:</label><br>
-                            <input id="input" type="text" name="usuario" maxlength="25" required><br>
-                            <input id="input" type="submit" value="Iniciar sesión">
-                        </form>
-                    </div>
-                    <div class="item">
-                        <i class="fas fa-camera"></i>
-                        <h3 class="titulo-services">Te va a flipar</h3>
-                        <p>Material de artistas que me gustan</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about-us">
-            <div class="grid">
-                <div class="textos-about-us">
-                    <h2 class="subtitulo">SOBRE NOSOTROS</h2>
-                    <p class="parrafo">Somos una página dedicada a la divulgación del arte, pero sobre todo de fotografía, que es nuestro principal interes.</p>
-                </div>
-            </div>
-        </section>
-        <section class="mission grid">
-            <div class="img-mission">
-                <img src="./img/img2.jpg" alt="" class="img">
-            </div>
-        </section>
-    </main>
+    </header>
+
+    <span class="linea"></span>
+    <section class="galeria">
+    <a href="#image1">
+        <img src="../img/im1.jpg" alt=""></a>
+    <a href="#image2">
+        <img src="../img/im2.jpg" alt=""></a>
+    <a href="#image3">
+        <img src="../img/im3.jpg" alt=""></a>
+    <a href="#image4">
+        <img src="../img/im4.jpg" alt=""></a>
+    <a href="#image5">
+        <img src="../img/im5.jpg" alt=""></a>
+    <a href="#image6">
+        <img src="../img/im6.JPG" alt=""></a>
+</section>
+
+<article class="light-box" id="image1">
+    <a href="#image6" class="next"><i class="fa-solid fa-arrow-left"></i></i></a>
+    <img src="../img/im1.jpg" alt="">
+    <a href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+</article>
+
+<article class="light-box" id="image2">
+    <a href="#image1" class="next"><i class="fa-solid fa-arrow-left"></i></i></a>
+    <img src="../img/im2.jpg" alt="">
+    <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+</article>
+
+<article class="light-box" id="image3">
+    <a href="#image2" class="next"><i class="fa-solid fa-arrow-left"></i></i></a>
+    <img src="../img/im3.jpg" alt="">
+    <a href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+</article>
+
+<article class="light-box" id="image4">
+    <a href="#image3" class="next"><i class="fa-solid fa-arrow-left"></i></i></a>
+    <img src="../img/im4.jpg" alt="">
+    <a href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+</article>
+
+<article class="light-box" id="image5">
+    <a href="#image4" class="next"><i class="fa-solid fa-arrow-left"></i></i></a>
+    <img src="../img/im5.jpg" alt="">
+    <a href="#image6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+</article>
+
+<article class="light-box" id="image6">
+    <a href="#image5" class="next"><i class="fa-solid fa-arrow-left"></i></i></a>
+    <img src="../img/im6.JPG" alt="">
+    <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+</article>
+
     <footer>
         <div class="grid">
             <div class="textos-footer">
