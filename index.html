@@ -18,7 +18,7 @@ fecha: Diciembre 2020
 	
 </head>
 
-<body>
+<body onload="cargarUser()">
  <button id="mensajeBoton" onclick="ponerModo('')">Comenzar</button>
     <header class="header">
         <div class="grid">
@@ -126,7 +126,7 @@ fecha: Diciembre 2020
                         <h3 class="titulo-services">Mi galería</h3>
                         <a class="cta" href="./html/galería.html" target="_self"> Pincha aquí para dar un vistazo</a>
                     </div>
-                    <div class="item" onload="controlar()">
+                    <div class="item">
                         <i class="fas fa-user"></i>
 	<form id="login" name="miFormulario" onsubmit="return validarXML()">
 		<label for="usuario">Usuario:</label><br>
