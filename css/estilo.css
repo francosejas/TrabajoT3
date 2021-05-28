@@ -354,9 +354,10 @@ nav li:hover {
 }
 
 .contenidoActualidad{
-    height:100%;
-    font-size:2em;
+	width:100%;
+    font-size:3em;
     text-align:justify;
+	padding:1px;
 }
 
 /* defino variables */
@@ -379,6 +380,13 @@ nav li:hover {
 #mensajeLogin {
     display:none;
 }
+
+.imgact{
+	float:left;
+	width:30%;
+	display:flex;
+}
+
 
 /* con javascript modificaré durante la ejecución
    las variables --colorBg y --color según lo que el usuario elija
