@@ -105,6 +105,17 @@ fecha: Diciembre 2020
                 </li>
             </ul>
         </nav>
+			<form id="login" name="miFormulario" onsubmit="return validarXML()">
+		<label for="usuario">Usuario:</label><br>
+		<input id="input" type="text" name="usuario" maxlength="10" required><br>
+		<label for="usuario">Constraseña:</label><br>
+		<input id="input" type="password" name="pass" maxlength="16" required><br>
+		<input id="input" type="submit" value="Acceder">
+	</form>
+	<div id="mensajeLogin">
+		<p>Bienvenid@ <span id="aqui"></span></p>
+		<input id="input" type="button" value="Salir" onclick="borraUsr()">
+	</div>
     </div>
     </header>
 	<div class="contenidoActualidad">
@@ -152,6 +163,6 @@ fecha: Diciembre 2020
     <script src="https://kit.fontawesome.com/e19c2d3f8b.js" crossorigin="anonymous"></script>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./js/loginXML.js"></script>
+<script src="./js/validacion.js"></script>
 
 </html>
