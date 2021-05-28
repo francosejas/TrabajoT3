@@ -7,7 +7,7 @@ function validarXML() {
 			miFuncion(this);
 		}
 	};
-	xhr.open("GET", "https://francosejas.github.io/TrabajoT3/registrados.xml", true);
+	xhr.open("GET", "https://francosejas.github.io/TrabajoT3//registrados.xml", true);
 	xhr.send();
 }
 
