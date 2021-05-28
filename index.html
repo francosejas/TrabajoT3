@@ -19,6 +19,7 @@ fecha: Diciembre 2020
 </head>
 
 <body>
+ <button id="mensajeBoton" onclick="ponerModo('')">Comenzar</button>
     <header class="header">
         <div class="grid">
 
@@ -127,17 +128,17 @@ fecha: Diciembre 2020
                     </div>
                     <div class="item" onload="controlar()">
                         <i class="fas fa-user"></i>
-                        <form name="miFormulario" onSubmit="return guardaUsr()">
-                            <form method="GET" id="ingresar" name="miFormulario" action="index.html" onSubmit="return intentar()">
-                                <label for="apellido">Usuario:</label>
-                                <input type="text" id="usr" name="formUsuario" required><br>
-                                <label for="apellido">Clave:</label>
-                                <input type="text" id="clv" name="formClave" required><br>
-                                <input type="submit" value="INGRESAR">
-                            </form>
-                            <button id="desconectar" onclick="desconectar()">DESCONECTAR</button>
-                            <button onclick="desconectar()">LIMPIAR MEMORIA</button>
-                        </form>
+			<form id="login" name="miFormulario" onsubmit="return validarXML()">
+				<label for="usuario">Usuario:</label><br>
+				<input id="input" type="text" name="usuario" maxlength="10" required><br>
+				<label for="usuario">Constraseña:</label><br>
+				<input id="input" type="password" name="pass" maxlength="16" required><br>
+				<input id="input" type="submit" value="Acceder">
+			</form>
+	<div id="mensajeLogin">
+		<p>Bienvenid@ <span id="aqui"></span></p>
+		<input id="input" type="button" value="Salir" onclick="borraUsr()">
+	</div>
                     </div>
                     <div class="item">
                         <i class="fas fa-camera"></i>
@@ -189,8 +190,10 @@ fecha: Diciembre 2020
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/e19c2d3f8b.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./js/validacion.js"></script>
+	<script src="./js/modo.js"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./js/loginXML.js"></script>
+
 
 </html>

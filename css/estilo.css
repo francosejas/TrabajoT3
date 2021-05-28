@@ -359,6 +359,32 @@ nav li:hover {
     text-align:justify;
 }
 
+/* defino variables */
+
+:root {
+	/* colores de fondo posibles */
+	--colorBgDia: white;
+	--colorBgNoche: black;
+
+	/* colores de fuente */
+	--colorDia: black;
+	--colorNoche: red;
+
+	/*  inicializo las variables que voy a aplicar y creo una variable que lo registre*/
+	--colorBg: var(--colorBgNoche);
+	--color: var(--colorNoche);
+	--modo:"noche";
+}
+
+#mensajeLogin {
+    display:none;
+}
+
+/* con javascript modificaré durante la ejecución
+   las variables --colorBg y --color según lo que el usuario elija
+   y actualizando el valor de la variable --modo   */
+
+
 @media screen and(max-width:800px) {
     .header {
         height: auto;
