@@ -16,6 +16,20 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+#contenedor {
+  /* estilos para el único elemento identificado con este #esteElemento; */
+	max-height:100px;
+	max-width:200px;
+	padding: 10px;
+	overflow-x: scroll;
+	overflow-y:hidden;
+}
+
+#contenido {
+  /* estilos para el único elemento identificado con este #esteElemento; */
+	width:600px;
+	
+}
 .cabezaGaleria{
     text-align: center;
     color: white;

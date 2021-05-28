@@ -15,6 +15,7 @@ fecha: Diciembre 2020
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -122,20 +123,26 @@ fecha: Diciembre 2020
                     <div class="item">
                         <i class="fas fa-camera"></i>
                         <h3 class="titulo-services">Mi galería</h3>
-                        <a class="cta" href="./html/galería.html"target="_self"> Pincha aquí para dar un vistazo</a>
+                        <a class="cta" href="./html/galería.html" target="_self"> Pincha aquí para dar un vistazo</a>
                     </div>
-                    <div class="item">
+                    <div class="item" onload="controlar()">
                         <i class="fas fa-user"></i>
                         <form name="miFormulario" onSubmit="return guardaUsr()">
-                            <label for="usuario">Ingrese su nombre o usuario:</label><br>
-                            <input id="input" type="text" name="usuario" maxlength="25" required><br>
-                            <input id="input" type="submit" value="Iniciar sesión">
+                            <form method="GET" id="ingresar" name="miFormulario" action="index.html" onSubmit="return intentar()">
+                                <label for="apellido">Usuario:</label>
+                                <input type="text" id="usr" name="formUsuario" required><br>
+                                <label for="apellido">Clave:</label>
+                                <input type="text" id="clv" name="formClave" required><br>
+                                <input type="submit" value="INGRESAR">
+                            </form>
+                            <button id="desconectar" onclick="desconectar()">DESCONECTAR</button>
+                            <button onclick="desconectar()">LIMPIAR MEMORIA</button>
                         </form>
                     </div>
                     <div class="item">
                         <i class="fas fa-camera"></i>
                         <h3 class="titulo-services">Te va a flipar</h3>
-                        <a class="cta" href="./html/share.html"target="_self">Material de artistas que me gustan</a>
+                        <a class="cta" href="./html/share.html" target="_self">Material de artistas que me gustan</a>
                     </div>
                 </div>
             </div>
@@ -183,6 +190,7 @@ fecha: Diciembre 2020
     </footer>
     <script src="https://kit.fontawesome.com/e19c2d3f8b.js" crossorigin="anonymous"></script>
 </body>
-<script src="./js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/loginXML.js"></script>
 
 </html>
