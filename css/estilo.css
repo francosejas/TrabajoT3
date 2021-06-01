@@ -209,6 +209,7 @@ footer {
 }
 
 nav {
+    display: inline-block;
     overflow: hidden;
     height: auto;
     font-size: 2vw;
