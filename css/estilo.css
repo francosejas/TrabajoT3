@@ -17,23 +17,23 @@ body {
 }
 
 #contenedor {
-  /* estilos para el único elemento identificado con este #esteElemento; */
-	max-height:100px;
-	max-width:200px;
-	padding: 10px;
-	overflow-x: scroll;
-	overflow-y:hidden;
+    /* estilos para el único elemento identificado con este #esteElemento; */
+    max-height: 100px;
+    max-width: 200px;
+    padding: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 #contenido {
-  /* estilos para el único elemento identificado con este #esteElemento; */
-	width:600px;
-	
+    /* estilos para el único elemento identificado con este #esteElemento; */
+    width: 600px;
 }
-.cabezaGaleria{
+
+.cabezaGaleria {
     text-align: center;
     color: white;
-    background-color:black;
+    background-color: black;
 }
 
 .grid {
@@ -79,17 +79,18 @@ body {
     width: 100%;
     height: auto;
     grid-column: 7/13;
+    min-width: 400px;
 }
 
 .img {
     width: 95%;
-    /*max-width: 400px;*/
-    ;
+    max-width: 400px;
 }
 
 .textos-hero {
     grid-column: 1/7;
     padding-right: 20px;
+    min-width: 400px;
 }
 
 .textos-hero p {
@@ -129,6 +130,7 @@ body {
     height: 220px;
     padding: 20px 10px;
     text-align: center;
+    min-width: 300px;
 }
 
 [class^="far fa"] {
@@ -175,9 +177,11 @@ body {
     grid-row: 1/-1;
     margin-bottom: 20px;
 }
-.imgGaleria{
-    grid-column:2/7
+
+.imgGaleria {
+    grid-column: 2/7
 }
+
 .img-mission {
     grid-column: 2/12;
     text-align: center;
@@ -273,68 +277,67 @@ nav li:hover {
     left: 3px;
 }
 
-.galeria{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px,1fr));
-    width:95%;
-    margin:auto;
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    width: 95%;
+    margin: auto;
     grid-gap: 10px;
-    padding:40px 0;
-    overflow:hidden;
-
+    padding: 40px 0;
+    overflow: hidden;
 }
 
-.galeria img{
-    width:100%;
-    vertical-align:top;
+.galeria img {
+    width: 100%;
+    vertical-align: top;
     height: 600px;
     object-fit: cover;
     transition: transform 0.5s;
 }
 
-.galeria>a{
-    display:block;
-    position:relative;
-    overflow:hidden;
+.galeria>a {
+    display: block;
+    position: relative;
+    overflow: hidden;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.galeria a:hover img{
+.galeria a:hover img {
     filter: blur(2px);
     transform: rotate(10deg) scale(1.3);
 }
 
-.light-box{
-    position:fixed;
-    top:0;
-    left:0;
-    background:rgba(0,0,0,.5);
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
     transition: transform .3s ease-in-out;
-    width:100%;
-    height:100vh;
-    z-index:1000;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: scale(0);
 }
 
-.light-box img{
-    width:60vw;
+.light-box img {
+    width: 60vw;
     max-height: 70vh;
 }
 
-.light-box:target{
+.light-box:target {
     transform: scale(1);
 }
 
-.close{
+.close {
     display: block;
-    position:absolute;
+    position: absolute;
     top: 40px;
     right: 40px;
-    background:crimson;
-    color:white;
+    background: crimson;
+    color: white;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -342,56 +345,58 @@ nav li:hover {
     border-radius: 50%;
 }
 
-.next{
-    display:block;
-    background:crimson;
-    color:white;
-    height:30px;
-    width:30px;
-    line-height:30px;
-    text-decoration:none;
+.next {
+    display: block;
+    background: crimson;
+    color: white;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
     text-align: center;
 }
 
-.contenidoActualidad{
-	width:100%;
-    font-size:3em;
-    text-align:justify;
-	padding:1px;
+.contenidoActualidad {
+    width: 100%;
+    font-size: 3em;
+    text-align: justify;
+    padding: 1px;
 }
+
 
 /* defino variables */
 
 :root {
-	/* colores de fondo posibles */
-	--colorBgDia: white;
-	--colorBgNoche: black;
-
-	/* colores de fuente */
-	--colorDia: black;
-	--colorNoche: red;
-
-	/*  inicializo las variables que voy a aplicar y creo una variable que lo registre*/
-	--colorBg: var(--colorBgNoche);
-	--color: var(--colorNoche);
-	--modo:"noche";
+    /* colores de fondo posibles */
+    --colorBgDia: white;
+    --colorBgNoche: black;
+    /* colores de fuente */
+    --colorDia: black;
+    --colorNoche: red;
+    /*  inicializo las variables que voy a aplicar y creo una variable que lo registre*/
+    --colorBg: var(--colorBgNoche);
+    --color: var(--colorNoche);
+    --modo: "noche";
 }
 
 #mensajeLogin {
-    display:none;
+    display: none;
 }
 
-.imgact{
-	float:left;
-	width:30%;
-	display:flex;
+.imgact {
+    float: left;
+    width: 30%;
+    display: flex;
+}
+
+section {
+    display: list-item;
 }
 
 
 /* con javascript modificaré durante la ejecución
    las variables --colorBg y --color según lo que el usuario elija
    y actualizando el valor de la variable --modo   */
-
 
 @media screen and(max-width:800px) {
     .header {
@@ -455,13 +460,11 @@ nav li:hover {
     [class^="footer-item"] {
         grid-column: 1/-1;
     }
-    
-    .galeria{
+    .galeria {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    .close{
+    .close {
         top: 20px;
         right: 20px;
     }
 }
-
